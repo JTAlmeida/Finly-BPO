@@ -95,6 +95,12 @@ export const Form = styled.form`
   font-size: 20px;
   font-weight: 500;
   align-items: center;
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+    padding: 0 15%;
+  }
 
   @media (max-width: 900px) {
     font-size: 15px;

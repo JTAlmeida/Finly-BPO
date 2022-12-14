@@ -102,11 +102,11 @@ export default function Header() {
           Pare de perder tempo...
           <h1>Simplifique a gestão financeira</h1>
           <p>do seu negócio!</p>
-          <h2>
-            Deixe seu cadastro nos explicando melhor sobre seu negócio e{" "}
-            <strong>receba uma avaliação gratuita:</strong>
-          </h2>
           <Form onSubmit={sendEmail}>
+            <h2>
+              Deixe seu cadastro nos explicando melhor sobre seu negócio e{" "}
+              <strong>receba uma avaliação gratuita:</strong>
+            </h2>
             *Nome e sobrenome:
             <Input
               type="text"
