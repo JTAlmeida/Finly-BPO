@@ -142,7 +142,7 @@ const Global = css`
   body {
     width: 100vw;
     height: 100vh;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     font-family: "Montserrat", sans-serif;
     word-wrap: break-word;
     color: #000000;
@@ -152,6 +152,12 @@ const Global = css`
   button {
     border: none;
     cursor: pointer;
+  }
+
+  @media (min-width: 375px) {
+    .App {
+      max-width: 375px;
+    }
   }
 `;
 

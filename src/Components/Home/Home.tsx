@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Wrapper>Cor de fonte 4</Wrapper>
+      <Wrapper>Em construção...</Wrapper>
       <Footer />
     </>
   );

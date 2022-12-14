@@ -10,9 +10,10 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 1500px;
+  height: 100px;
   color: rgb(255, 255, 255);
   font-size: 40px;
+  margin-bottom: 40px;
 `;
 
 export const Container = styled.div``;
