@@ -77,11 +77,7 @@ export const TopLeftContainer = styled.div`
 
 export const TopRightContainer = styled.div`
   width: 50%;
-
-  img {
-    width: 40vw;
-    min-height: 90%;
-  }
+  align-self: center;
 
   @media (max-width: 900px) {
     width: 90%;
