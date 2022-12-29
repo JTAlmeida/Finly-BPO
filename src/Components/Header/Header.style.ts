@@ -143,13 +143,18 @@ export const TextArea = styled.textarea`
 
 export const Button = styled.button`
   font-size: 30px;
-  background-color: rgb(49, 95, 93);
+  background-color: rgba(49, 95, 93, 1);
   color: rgb(255, 255, 255);
   width: 300px;
   height: 40px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  :hover {
+    transition: 0.5s ease-in-out;
+    background: rgba(49, 95, 93, 0.9);;
+  }
 
   @media (max-width: 614px) {
     min-width: 50px;
