@@ -37,7 +37,7 @@ export default function Home() {
               <strong>o caminho certo para crescer com seu negócio.</strong>
             </p>
             <p>
-              É como se ter um especialista em finanças empresariais em home
+              É como ter um especialista em finanças empresariais em home
               office trabalhando para sua empresa, só que sem a dor de cabeça
               dos encargos trabalhistas e{" "}
               <strong>por um preço muito menor</strong>, um valor justo que cabe
@@ -79,6 +79,11 @@ export default function Home() {
             </div>
           </SingleDiv>
         </ColoredContainer>
+        <Container>
+          <LeftSide></LeftSide>
+          <RightSide></RightSide>
+        </Container>
+        <ColoredContainer></ColoredContainer>
         <Container>
           <div className="centered">
             <h2>E ai, vai perder esta </h2>
