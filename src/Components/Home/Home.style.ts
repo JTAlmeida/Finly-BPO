@@ -25,7 +25,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 900px) {
-    >h5 {
+    > h5 {
       margin: auto;
     }
   }
@@ -77,7 +77,7 @@ export const LeftSide = styled.div`
     margin: auto;
     text-align: center;
 
-    > img{
+    > img {
       margin-bottom: 20px;
     }
   }
@@ -97,7 +97,7 @@ export const RightSide = styled.div`
   }
 
   > p {
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 5px;
   }
 
@@ -117,7 +117,7 @@ export const RightSide = styled.div`
 export const SingleDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 0 20%;
+  margin: 0 10%;
   justify-content: space-evenly;
 
   > h1 {
@@ -138,9 +138,9 @@ export const SingleDiv = styled.div`
       align-self: center;
     }
 
-    > h1 {
+    h1 {
       font-weight: 700;
-      font-size: 25px;
+      font-size: 20px;
       margin-bottom: 10px;
     }
 
@@ -149,12 +149,20 @@ export const SingleDiv = styled.div`
     }
   }
 
+  @media (max-width: 1270px) {
+    > div {
+      > h1 {
+        font-weight: 600;
+      }
+    }
+  }
+
   @media (max-width: 900px) {
     width: 90%;
     margin: auto;
     text-align: center;
 
-    >div{
+    > div {
       width: 100%;
       margin-bottom: 20px;
     }

@@ -6,9 +6,21 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(224, 224, 224);
+  color: rgb(255, 255, 255);
   font-size: 15px;
   text-align: center;
+  background: rgb(8, 26, 25);
+  background: linear-gradient(
+    0deg,
+    rgba(8, 26, 25, 0.9) 0%,
+    rgba(51, 152, 147, 1) 100%
+  );
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  @media (max-width: 900px) {
+    height: 10vh;
+    font-size: 12px;
+  }
 `;
 
 export const Container = styled.div`
@@ -65,11 +77,11 @@ export const Container = styled.div`
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 900px) {
     .whatsapp_float {
       width: 40px;
-      height: 40px;
-      bottom: 25px;
+      height: 43px;
+      bottom: 80px;
       right: 25px;
       font-size: 22px;
     }

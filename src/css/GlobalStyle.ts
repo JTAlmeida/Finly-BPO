@@ -147,6 +147,7 @@ const Global = css`
     word-wrap: break-word;
     color: #000000;
     overflow-x: hidden;
+    line-height: 2em;
   }
 
   button {
