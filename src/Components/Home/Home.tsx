@@ -80,7 +80,17 @@ export default function Home() {
           </SingleDiv>
         </ColoredContainer>
         <Container>
-          <h5>Em construção...</h5>
+          <div className="centered">
+            <h2>E ai, vai perder esta </h2>
+            <h1>oportunidade?</h1>
+            <a
+              href="https://wa.me/5561992649794"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fale conosco no whats!
+            </a>
+          </div>
         </Container>
       </Wrapper>
       <Footer />

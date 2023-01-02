@@ -20,6 +20,51 @@ export const Container = styled.div`
   font-size: 30px;
   margin-bottom: 40px;
 
+  .centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+
+    > h1 {
+      font-weight: 700;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+  }
+
+  a {
+    display: flex;
+    padding: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+    background-color: rgb(179, 141, 104);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    :hover {
+      transition: 0.5s ease-in-out;
+      background: rgba(179, 141, 104, 0.8);
+    }
+
+    @media (max-width: 614px) {
+      min-width: 50px;
+      max-width: auto;
+
+      margin-bottom: 20px;
+    }
+  }
+
   > h5 {
     margin-left: 45%;
   }
@@ -106,10 +151,10 @@ export const RightSide = styled.div`
     margin: auto;
 
     > h1 {
-      font-size: 25px;
+      font-size: 22px;
     }
     > p {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 `;
@@ -138,7 +183,7 @@ export const SingleDiv = styled.div`
       align-self: center;
     }
 
-    h1 {
+    > h1 {
       font-weight: 700;
       font-size: 20px;
       margin-bottom: 10px;
