@@ -34,15 +34,18 @@ export const Container = styled.div`
       font-size: 32px;
       margin-bottom: 10px;
     }
+
+    > img {
+      max-width: 100%;
+    }
   }
 
   a {
     display: flex;
-    padding: 10px;
-    padding-left: 15px;
     margin-top: 10px;
     text-align: center;
     justify-content: center;
+    align-items: center;
     font-size: 22px;
     background-color: rgb(179, 141, 104);
     color: rgb(255, 255, 255);
@@ -51,18 +54,54 @@ export const Container = styled.div`
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: all 0.35s;
 
-    :hover {
-      transition: 0.5s ease-in-out;
-      background: rgba(179, 141, 104, 0.8);
-    }
-
-    @media (max-width: 614px) {
+    @media (max-width: 900px) {
       min-width: 50px;
       max-width: auto;
-
-      margin-bottom: 20px;
     }
+  }
+
+  .wrapper {
+    transform: translate(0, 0);
+  }
+
+  .link_wrapper {
+    position: relative;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.35s;
+  }
+
+  .icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: rgba(51, 152, 147, 1);
+    transition: all 0.35s;
+  }
+
+  a:hover {
+    width: 280px;
+    border: 3px solid rgba(51, 152, 147, 1);
+    background: transparent;
+    color: rgba(51, 152, 147, 1);
+  }
+
+  a:hover + .icon {
+    border: 3px solid rgba(51, 152, 147, 1);
+    right: -25%;
   }
 
   > h5 {
