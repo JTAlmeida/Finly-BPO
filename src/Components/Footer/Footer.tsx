@@ -1,5 +1,4 @@
 import { Container, Wrapper } from "./Footer.style";
-import logo from "../../assets/logo326.png";
 
 export default function Footer() {
   return (
