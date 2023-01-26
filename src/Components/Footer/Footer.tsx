@@ -1,6 +1,8 @@
 import { Container, Wrapper } from "./Footer.style";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const navigate = useNavigate();
   return (
     <>
       <Wrapper>
@@ -13,6 +15,9 @@ export default function Footer() {
           id="toggle1"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => {
+            navigate("/thanks");
+          }}
         >
           <i className="fa fa-whatsapp"></i>
         </a>

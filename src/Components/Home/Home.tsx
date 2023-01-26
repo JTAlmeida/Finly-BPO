@@ -93,12 +93,16 @@ export default function Home() {
           <div className="wrapper centered">
             <h2>E aí, vai perder esta </h2>
             <h1>oportunidade?</h1>
-            <div className="link_wrapper">
+            <div
+              className="link_wrapper"
+              onClick={() => {
+                navigate("/thanks");
+              }}
+            >
               <a
                 href="https://wa.me/5561992649794"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={()=>{navigate("/thanks")}}
               >
                 Fale conosco no whats!
               </a>
