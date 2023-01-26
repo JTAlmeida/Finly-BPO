@@ -13,8 +13,10 @@ import headerImg from "../../assets/headerimg.png";
 import { useState } from "react";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -49,6 +51,7 @@ export default function Header() {
           setEmail("");
           setMessage("");
           setPhoneNumber("");
+          navigate("/thanks");
         },
         (err) => {
           console.log("ERRO", err);

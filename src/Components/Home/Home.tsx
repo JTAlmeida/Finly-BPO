@@ -16,8 +16,11 @@ import barcode from "../../assets/barcode96.png";
 import invoice from "../../assets/invoicedolar96.png";
 import comparativeChart from "../../assets/comparativechart.gif";
 import ReactGA from "react-ga";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+
   ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <>
@@ -95,6 +98,7 @@ export default function Home() {
                 href="https://wa.me/5561992649794"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={()=>{navigate("/thanks")}}
               >
                 Fale conosco no whats!
               </a>
