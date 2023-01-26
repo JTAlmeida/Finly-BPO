@@ -15,8 +15,10 @@ import chart from "../../assets/combochart96.png";
 import barcode from "../../assets/barcode96.png";
 import invoice from "../../assets/invoicedolar96.png";
 import comparativeChart from "../../assets/comparativechart.gif";
+import ReactGA from "react-ga";
 
 export default function Home() {
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <>
       <Header />
