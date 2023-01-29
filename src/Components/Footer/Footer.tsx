@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <Wrapper>
-        ©2023 Finly BPO - Gestão Financeira - Todos os direitos reservados.
+        ©2023 Finly BPO - Gestão Financeira - Todos os direitos reservados. CNPJ: 41.108.122/0001-83 
       </Wrapper>
       <Container>
         <a
